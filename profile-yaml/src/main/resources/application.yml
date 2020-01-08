@@ -1,0 +1,39 @@
+logging:
+  level:
+    org.springframework: ERROR
+    com.sadiq: DEBUG
+
+spring:
+  profiles:
+    active: "prod"
+
+server:
+  email: default@sadiq.com
+
+---
+
+spring:
+  profiles: dev
+server:
+  email: dev@sadiq.com
+  cluster:
+    - ip: 127.0.0.1
+      path: /dev1
+    - ip: 127.0.0.2
+      path: /dev2
+    - ip: 127.0.0.3
+      path: /dev3
+
+---
+
+spring:
+  profiles: prod
+server:
+  email: prod@sadiq.com
+  cluster:
+    - ip: 192.168.0.1
+      path: /app1
+    - ip: 192.168.0.2
+      path: /app2
+    - ip: 192.168.0.3
+      path: /app3

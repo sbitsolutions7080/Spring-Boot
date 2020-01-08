@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: Spring Boot Profiles Example
+Implementation-Version: 1.0
+Built-By: Sadiq_Nutankaluva
+Implementation-Vendor-Id: org.springframework.boot
+Build-Jdk: 1.8.0_101
+Implementation-URL: https://www.sadiq.com
+Created-By: Maven Integration for Eclipse
+
